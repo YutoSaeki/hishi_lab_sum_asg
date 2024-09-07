@@ -35,7 +35,12 @@
 
 
 10. メモ
+
+テキスト第6章（文章分類）のサンプルコードのリンク：　
+https://colab.research.google.com/github/stockmarkteam/bert-book/blob/master/Chapter6.ipynb
+
 BERTの最大トークン数は512であるため、入力できるテキストは500から600文字くらいが限界？
 入力できるテキストの最大をそれよりも下に設定するのが無難
+
 
 
