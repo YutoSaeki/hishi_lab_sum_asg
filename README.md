@@ -39,6 +39,16 @@
 テキスト第6章（文章分類）のサンプルコードのリンク：　
 https://colab.research.google.com/github/stockmarkteam/bert-book/blob/master/Chapter6.ipynb
 
+インストールしたライブラリ
+・PyTorch　（深層学習のフレームワーク）
+・Transformers　（ニューラル言語モデルのライブラリ）
+・Fugashi　（日本語の形態素解析ツールのMeCabをPythonから使えるようにしたもの）
+・ipadic　（Mecabで形態素解析を行う際に用いる辞書）
+・PyTorch Lightning　（PyTorchで書く必要がある処理がメソッド化されており、簡単にコードが書けるフレームワーク）
+
+PyTorchをインストールした後、インポートしたらエラー吐いた時に参考にしたサイト：
+https://qiita.com/sakusaku3939/items/1a133729c7f38e8403ce
+
 BERTの最大トークン数は512であるため、入力できるテキストは500から600文字くらいが限界？
 入力できるテキストの最大をそれよりも下に設定するのが無難
 
