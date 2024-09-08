@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>ユーザの気分に合った楽曲を再生するアプリ</h1>
+        </header>
+    </div>
+
+    <div>
+        <form id="form" action="/nlp" method="post">
+            <input name="content" type="text">
+            <button id="text" type="submit">送信</button>
+        </form>
+    </div>
+
+    <div>
+        <!--入力したテキストを表示-->
+        <p>入力テキスト: {{ text }}</p>
+        <p>ネガポジの信頼度: {{ scores }}</p>
+        <p>ネガポジの確率: {{ probs }}</p>
+        <p>分類予測: {{ labels_predicted }}</p> 
+        <p>0: ネガティブ、1: ポジティブ</p>
+    </div>
+
+</body>
+
+<script>
+
+    // テキスト送信時に実行する関数
+    // document.getElementById('form').onsubmit = function (event) {
+    //     // 再読み込み防止
+    //     event.preventDefault();
+    //     // 入力フォームの内容を取得
+    //     let inputForm = document.getElementById('form').content.value;
+	// 	// 入力内容を画面に出力
+    //     document.getElementById('output').textContent = `${inputForm}`;
+    // }
+
+</script>
+</html>
