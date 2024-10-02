@@ -45,6 +45,7 @@ https://colab.research.google.com/github/stockmarkteam/bert-book/blob/master/Cha
 ・Fugashi　（日本語の形態素解析ツールのMeCabをPythonから使えるようにしたもの）
 ・ipadic　（Mecabで形態素解析を行う際に用いる辞書）
 ・PyTorch Lightning　（PyTorchで書く必要がある処理がメソッド化されており、簡単にコードが書けるフレームワーク）
+・spotipy　（SpotifyのAPIを扱うためのライブラリ）
 
 PyTorchをインストールした後、インポートしたらエラー吐いた時に参考にしたサイト：
 https://qiita.com/sakusaku3939/items/1a133729c7f38e8403ce
@@ -55,6 +56,9 @@ BERTの最大トークン数は512であるため、入力できるテキスト�
 ・自然言語処理のタスクメモ
 はじめに、テキスト教材で使用していた日本語の事前学習済みモデルをそのまま使用し文章分類を試してみた。結果としては精度が低く、ネガティブとポジティブの確率を見てみるとほとんどのテキストでそれぞれ50%付近の値が取れたため、モデルが入力テキストに対する判断に自信がない事が分かった。
 次に事前学習済みモデルをファインチューニングして作成したモデルを使って文章分類してみる。
+
+Spotify APIのアクセストークンを取得するときに参考にしたサイト：
+https://apidog.com/jp/blog/spotify-web-api-guide/
 
 
 
