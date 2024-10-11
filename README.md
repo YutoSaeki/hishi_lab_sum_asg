@@ -60,6 +60,9 @@ BERTの最大トークン数は512であるため、入力できるテキスト�
 Spotify APIのアクセストークンを取得するときに参考にしたサイト：
 https://apidog.com/jp/blog/spotify-web-api-guide/
 
+spotify web playback sdk 公式ドキュメント：
+https://developer.spotify.com/documentation/web-playback-sdk/tutorials/getting-started
+
 
 
 
