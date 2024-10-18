@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Web Playback SDK Example</title>
+    <link rel="stylesheet" href="/static/css/spotify.css">
+</head>
+<body>
+
+    <h1>今のあなたに適した音楽はこれ!</h1>
+
+    <div>
+        <button class="back" onclick="location.href='index.html'">戻る</button>
+        <!-- <input type="button" value="戻る"> -->
+    </div>
+
+    <!-- <div id="playerControls">
+        <button id="playButton">Play</button>
+        <button id="pauseButton">Pause</button>
+        <button id="nextButton">Next</button>
+        <button id="prevButton">Previous</button>
+    </div> -->
+
+    <!-- Spotifyの埋め込みプレイヤー（楽曲単体） -->
+    <div class="spotify-player">
+        <iframe
+            title="Spotify Embed: Single Track"
+            src= "{{ tracks }}"
+            width="70%"
+            height="100%"
+            style="min-height: 360px;"
+            frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <!-- <button id="togglePlay">Toggle Play</button> -->
+    
+    <div>
+        <!--入力したテキストを表示-->
+        <p>入力テキスト: {{ text }}</p>
+        <!-- <p>ネガポジの信頼度: {{ scores }}</p>
+        <p>ネガポジの確率: {{ probs }}</p> -->
+        <p>分類予測: {{ negaposi }}</p> 
+        <p>0: ネガティブ、1: ポジティブ</p>
+        <!-- <p>楽曲情報: {{ tracks }}</p> -->
+        <!-- <p>アクセストークン： {{ token }}</p> -->
+        <!-- <p>楽曲: {{ tracks }}</p> -->
+
+    </div>
+
+    <!-- <script src="https://sdk.scdn.co/spotify-player.js"></script> -->
+    <!-- <script src="spotify.js"></script> -->
+    <!-- <script src="{{ url_for('static', filename='spotify.js') }}"></script> -->
+    <!-- <script>
+        window.onSpotifyWebPlaybackSDKReady = () => {
+            //const token = '[My access token]';
+            const token = "{{ token }}";
+            const player = new Spotify.Player({
+                name: 'Web Playback SDK Quick Start Player',
+                getOAuthToken: cb => { cb(token); },
+                volume: 0.5
+            });
+
+            // Ready
+            player.addListener('ready', ({ device_id }) => {
+                console.log('Ready with Device ID', device_id);
+            });
+
+            // Not Ready
+            player.addListener('not_ready', ({ device_id }) => {
+                console.log('Device ID has gone offline', device_id);
+            });
+
+            player.addListener('initialization_error', ({ message }) => {
+                console.error(message);
+            });
+
+            player.addListener('authentication_error', ({ message }) => {
+                console.error(message);
+            });
+
+            player.addListener('account_error', ({ message }) => {
+                console.error(message);
+            });
+
+            document.getElementById('togglePlay').onclick = function() {
+                player.togglePlay();
+            };
+
+            player.connect();
+        }
+
+    </script> -->
+</body>
+</html>
