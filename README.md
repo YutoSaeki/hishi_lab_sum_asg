@@ -77,6 +77,8 @@ https://qiita.com/yama-github/items/94514830ad7759bc3687
 ngrok の無料版でドメイン・サブドメインを固定できる仕組みを試す！:
 https://qiita.com/youtoy/items/8a79d6954bb37f935f1b
 
+Spotifyの認証プロセスでユーザーに毎回アドレスとパスワードの入力を強制する方法は、現時点ではSpotifyの仕様上、提供されていない。
+SpotifyのOAuth認証は、ユーザーが一度認証すればセッションを保持し、以降のログイン時には再認証なしでアクセスできるようにする設計になっている。
 
 
 
