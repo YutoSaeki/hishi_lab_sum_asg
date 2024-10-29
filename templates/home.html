@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/css/home.css">
+</head>
+<body>
+    <header>
+        <img class="icon_img" src="{{ url_for('static', filename='images/spotify.png') }}" alt="" width="50" height="50">
+        <h2 class="title">ようこそ! あなたの気分に合った音楽を再生します!</h2>
+    </header>
+
+
+    <div class="login">
+        <button class="login_button" onclick="location.href='login'"> Spotifyにログインする</button>
+    </div>
+
+    <!-- <button class="logout" onclick="location.href='logout'">ログアウト</button> -->
+</body>
+</html>

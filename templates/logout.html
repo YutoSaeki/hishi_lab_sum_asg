@@ -1,0 +1,51 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <script>
+        // SpotifyのログアウトURLに移動し、少し待った後にhome.htmlに戻る
+        window.onload = function() {
+            // Spotifyのログアウトページに移動
+            window.open('{{ spotify_logout_url }}', '_blank');
+            
+            // 2秒待ってからhome.htmlへリダイレクト
+            setTimeout(function() {
+                window.location.href = "{{ url_for('home') }}";
+            }, 2000);
+        };
+    </script>
+</head>
+<body>
+    <p>Spotifyからログアウトしています。 すぐにホーム画面に戻ります。</p>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <link rel="stylesheet" href="/static/css/logout.css">
+    <script>
+        window.onload = function() {
+            // Spotifyのログアウトページを新しいウィンドウで開く
+            var logoutWindow = window.open('{{ spotify_logout_url }}', '_blank');
+
+            // 3秒後にhome.htmlへリダイレクト
+            setTimeout(function() {
+                if (logoutWindow) {
+                    logoutWindow.close(); // ログアウトウィンドウを閉じる
+                }
+                window.location.href = "{{ url_for('home') }}"; // home.htmlへリダイレクト
+            }, 3000);  // 3秒後にリダイレクト
+        };
+    </script>
+</head>
+<body>
+    <p>Spotifyからログアウトしています。少々お待ちください...</p>
+</body>
+</html>
