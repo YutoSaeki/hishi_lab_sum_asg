@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
     <link rel="stylesheet" href="/static/css/index.css">
 </head>
 <body>
-    <div>
-        <header>
-            <h1>あなたの今の気分は？</h1>
-        </header>
+    <header>
+        <img class="icon_img" src="{{ url_for('static', filename='images/spotify.png') }}" alt="" width="50" height="50">
+        <button class="logout_button" onclick="location.href='logout'">ログアウト</button>
+    </header>
+
+    <div class="title_area">
+        <h2 class="tilte">あなたが考えていることや感じたこと、今の気分などを教えてください。<br>今のあなたに合った音楽を提案します。</h2>
     </div>
 
     <div>
         <form class="form" id="form" action="/process" method="post">
-            <input  class="textarea" name="content" type="text" required>
-            <button id="text" type="submit">送信</button>
+            <!-- <input  class="textarea" name="content" type="text" required> -->
+            <p><textarea name="content" type="text" cols="40" rows="10" required maxlength="125"></textarea></p>
+            <p>※ 125文字以内、文章形式</p>
+            <p>例）今日は〇〇で△△だった。</p>
+            <p>　　▫️▫️が××だと思った。...など</p>
+            <div class="button_area">
+                <button class="button" id="text" type="submit">送信</button>
+            </div>
         </form>
     </div>
 

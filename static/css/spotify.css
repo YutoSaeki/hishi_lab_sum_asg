@@ -1,4 +1,107 @@
+body {
+    margin: 0;
+    /* margin-left: 0;
+    margin-right: 0; */
+    padding: 0;
+    background-color: rgb(45, 45, 45);
+    color: azure;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(40, 40, 40);
+    @media screen and (max-width: 767px) {
+        height: 80px;
+    }
+    @media screen and (min-width: 767px) {
+        height: 60px;
+    }
+    /* height: 60px; */
+}
+
+.icon_img {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.logout_button {
+    display: block;
+	/* text-align: center; */
+	vertical-align: middle;
+	/* text-decoration: none; */
+	width: 85px;
+    height: 30px;
+	margin: auto;
+    margin-right: 20px;
+	/* padding: 1rem 4rem; */
+    padding: auto;
+	font-weight: bold;
+	background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+	border-radius: 100vh;
+	color: #333;
+	border: 1px solid #999;
+	text-shadow: 0 1px #fff;
+	box-shadow: 0 3px 2px 1px #fcfcfc, 0 4px 6px #cecfd1, 0 -2px 2px #cecfd1, 0 -4px 2px #eee, inset 0 0 2px 2px #cecfd1;
+	transition: 0.5s;
+}
+
+.logout_button:hover {
+    opacity: 0.5;
+}
+
+.title_area {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.title {
+    margin-top: 0;
+    /* margin-left: 10px; */
+    /* margin-bottom: 200px; */
+}
+
 .spotify-player {
     display: flex;
     justify-content: center;
+}
+
+.button_area {
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    /* display: block; */
+	/* text-align: center; */
+	vertical-align: middle;
+	text-decoration: none;
+	width: 130px;
+    height: 40px;
+	margin: auto;
+	/* padding: 1rem 4rem; */
+	font-weight: bold;
+	border-radius: 100vh;
+	border-bottom: 7px solid #3cd859;
+	background: #3ced5d;
+	color: black;
+    /* margin-top: 150px; */
+}
+
+.button:hover {
+    margin-top: 6px;
+	border-bottom: 1px solid #3cd859;
+	color: black;
+}
+
+.box {
+    height: 20px;
+}
+
+.info {
+    margin-left: 100px;
 }

@@ -3,24 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Web Playback SDK Example</title>
+    <title>Spotify</title>
     <link rel="stylesheet" href="/static/css/spotify.css">
 </head>
 <body>
+    <header>
+        <img class="icon_img" src="{{ url_for('static', filename='images/spotify.png') }}" alt="" width="50" height="50">
+        <button class="logout_button" onclick="location.href='logout'">ログアウト</button>
+    </header>
 
-    <h1>今のあなたに適した音楽はこれ!</h1>
-
-    <div>
-        <button class="back" onclick="location.href='index.html'">戻る</button>
-        <!-- <input type="button" value="戻る"> -->
+    <div class="title_area">
+        <h2 class="tilte">今のあなたにはこれ!</h2>
     </div>
-
-    <!-- <div id="playerControls">
-        <button id="playButton">Play</button>
-        <button id="pauseButton">Pause</button>
-        <button id="nextButton">Next</button>
-        <button id="prevButton">Previous</button>
-    </div> -->
 
     <!-- Spotifyの埋め込みプレイヤー（楽曲単体） -->
     <div class="spotify-player">
@@ -36,15 +30,19 @@
         </iframe>
     </div>
 
-    <!-- <button id="togglePlay">Toggle Play</button> -->
+    <div class="button_area">
+        <button class="button" onclick="location.href='back'">もう一度入力する</button>
+    </div>
+
+    <div class="box"></div>
     
-    <div>
+    <div class="info">
         <!--入力したテキストを表示-->
-        <p>入力テキスト: {{ text }}</p>
+        <!-- <p>入力テキスト: {{ text }}</p> -->
         <!-- <p>ネガポジの信頼度: {{ scores }}</p>
         <p>ネガポジの確率: {{ probs }}</p> -->
-        <p>分類予測: {{ negaposi }}</p> 
-        <p>0: ネガティブ、1: ポジティブ</p>
+        <!-- <p>分類予測: {{ negaposi }}</p>  -->
+        <!-- <p>0: ネガティブ、1: ポジティブ</p> -->
         <!-- <p>楽曲情報: {{ tracks }}</p> -->
         <!-- <p>アクセストークン： {{ token }}</p> -->
         <!-- <p>楽曲: {{ tracks }}</p> -->
