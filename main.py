@@ -25,7 +25,8 @@ import random
 CLIENT_ID = '4abe8764fa6846ae8218beb2f9ddd3a1'
 CLIENT_SECRET = '8bee0afd727b4be68a4ae8f01ea68647'
 REDIRECT_URI = 'http://localhost:5001/callback'  # Spotifyに設定したリダイレクトURI
-# REDIRECT_URI = 'https://stephen-federal-zoloft-muslim.trycloudflare.com/callback'  # Spotifyに設定したリダイレクトURI
+# REDIRECT_URI = 'https://yuto.yuto0702.com/callback'  # 外部公開用のリダイレクトURI
+# REDIRECT_URI = 'https://stephen-federal-zoloft-muslim.trycloudflare.com/callback'  # 外部公開用のリダイレクトURI
 # REDIRECT_URI = 'https://resolved-viable-quetzal.ngrok-free.app/callback'  # 外部公開用のリダイレクトURI
 
 # Spotifyの認可エンドポイントとトークンエンドポイント
