@@ -29,22 +29,23 @@
   - 取得した楽曲データの中から1曲に絞り込む機能。
   - 楽曲を再生する機能。
 - 使用する技術
+  - Python
+  - Flask
+  - html
+  - css
+  - javascript
+  - Spotify API
+  - BERT
 - Spotify APIについて
+  - Spotify APIには音楽データの取得，管理，再生するための機能が用意されている．Spotify APIを使用することで楽曲検索や楽曲・アルバム・アーティスト情報の取得などができる．また，楽曲ごとに特徴量を数値化したパラメータが付与されている．楽曲を絞り込む機能については、この内部パラメータを使用する。
+- 取得した楽曲データの中から1曲に絞り込む機能について
+  はじめに楽曲50曲分の内部パラメータを取得する。それぞれの内部パラメータごとで閾値よりも高いor低い楽曲を変数に代入する（ここの閾値はネガポジの０、1によって判定する）。内部パラメータごとに選ばれた楽曲が入った変数それぞれの中で、楽曲ごとにカウントし、最もカウントが多かったものを適した楽曲として採用した。
 
 5. 参考にした類似物
 - SpotifyのSong Psychic：今年の3月くらいに期間限定で行っていた歌占いのようなサービス．
-https://qiita.com/sayuyuyu/items/4ca06a851fca41f6b270![image](https://github.com/user-attachments/assets/1684a2be-353f-4600-a816-7274293f44af)
+https://qiita.com/sayuyuyu/items/4ca06a851fca41f6b270
 
-
-
-7. 懸念点
-
-
-8. 画面遷移図
-
-
-
-10. メモ
+6. メモ
 
 テキスト第6章（文章分類）のサンプルコードのリンク：　
 https://colab.research.google.com/github/stockmarkteam/bert-book/blob/master/Chapter6.ipynb
