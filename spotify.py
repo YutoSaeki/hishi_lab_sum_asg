@@ -1,3 +1,7 @@
+# -------------------------------------------------------
+# Spotify API用の関数（検索と楽曲の絞り込み）
+# -------------------------------------------------------
+
 # Flask周り
 from flask import Flask, render_template, request, jsonify, redirect, session, url_for, make_response
 
