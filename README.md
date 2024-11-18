@@ -32,6 +32,8 @@
 - Spotify APIについて
 
 5. 参考にした類似物
+- SpotifyのSong Psychic：今年の3月くらいに期間限定で行っていた歌占いのようなサービス．
+https://qiita.com/sayuyuyu/items/4ca06a851fca41f6b270![image](https://github.com/user-attachments/assets/1684a2be-353f-4600-a816-7274293f44af)
 
 
 
@@ -40,8 +42,6 @@
 
 8. 画面遷移図
 
-
-9. 各画面の内容
 
 
 10. メモ
