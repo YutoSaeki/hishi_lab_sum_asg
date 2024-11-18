@@ -1,3 +1,7 @@
+# -------------------------------------------------------
+# メインのファイル
+# -------------------------------------------------------
+
 # Flask周り
 from flask import Flask, render_template, request, jsonify, redirect, session, url_for, make_response
 
@@ -147,7 +151,7 @@ def process():
         # 自然言語処理を行う関数を呼び出す
         nlp_negaposi = nlp.nlp(text)
 
-        #  Spotify APIの処理を行う関数を呼び出す
+        # Spotify APIの処理を行う関数を呼び出す
         keywords = text
         tracks = spotify.search_spotify(keywords, nlp_negaposi)
         # print(tracks)
